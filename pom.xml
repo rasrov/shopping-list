@@ -44,7 +44,7 @@
 			</dependency>
 			<dependency>
 				<groupId>${project.groupId}</groupId>
-				<artifactId>shopping-list-infraestructure</artifactId>
+				<artifactId>shopping-list-infrastructure</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 		</dependencies>
