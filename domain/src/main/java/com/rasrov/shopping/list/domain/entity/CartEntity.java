@@ -5,13 +5,15 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+import java.util.UUID;
+
 @Entity
 @Table(name = "CART")
 public class CartEntity {
 
     @Id
     @Column(name = "id")
-    private Long id;
+    private UUID id;
 
     @Column(name = "product_name")
     private String productName;
