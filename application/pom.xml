@@ -11,6 +11,10 @@
     <artifactId>shopping-list-application</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>com.rasrov.shopping-list</groupId>
+            <artifactId>shopping-list-domain</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

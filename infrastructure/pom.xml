@@ -15,6 +15,14 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.rasrov.shopping-list</groupId>
+            <artifactId>shopping-list-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.rasrov.shopping-list</groupId>
+            <artifactId>shopping-list-application</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

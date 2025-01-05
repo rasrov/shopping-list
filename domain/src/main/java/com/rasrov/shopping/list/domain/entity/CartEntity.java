@@ -21,4 +21,11 @@ public class CartEntity {
     @Column(name = "active")
     private Boolean active;
 
+    public CartEntity() {
+    }
+
+    public CartEntity(String productName, Boolean active) {
+        this.productName = productName;
+        this.active = active;
+    }
 }
