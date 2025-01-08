@@ -1,6 +1,5 @@
 package com.rasrov.shopping.list.adapter;
 
-import com.rasrov.shopping.list.entity.Cart;
 import com.rasrov.shopping.list.entity.CartEntity;
 import com.rasrov.shopping.list.api.CartService;
 import com.rasrov.shopping.list.serviceport.CartServicePort;
@@ -18,12 +17,12 @@ public class CartServiceAdapter implements CartService {
     }
 
     @Override
-    public void saveCart(final Cart cart) {
-        this.cartServicePort.saveCart(buildCartEntities(cart));
+    public void saveCart(final List<String> products) {
+        this.cartServicePort.saveCart(buildCartEntities(products));
     }
 
-    private List<CartEntity> buildCartEntities(final Cart cart) {
-        return cart.getProductName().stream()
+    private List<CartEntity> buildCartEntities(final List<String> products) {
+        return products.stream()
                 .map(productName -> new CartEntity(productName, true))
                 .toList();
     }
