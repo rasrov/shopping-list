@@ -1,8 +1,8 @@
-package com.rasrov.shopping.list.infrastructure.adapter;
+package com.rasrov.shopping.list.adapter;
 
-import com.rasrov.shopping.list.domain.entity.CartEntity;
-import com.rasrov.shopping.list.domain.serviceport.CartServicePort;
-import com.rasrov.shopping.list.infrastructure.repository.CartRepository;
+import com.rasrov.shopping.list.entity.CartEntity;
+import com.rasrov.shopping.list.serviceport.CartServicePort;
+import com.rasrov.shopping.list.repository.CartRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

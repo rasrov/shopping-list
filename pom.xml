@@ -29,12 +29,12 @@
 		<dependencies>
 			<dependency>
 				<groupId>${project.groupId}</groupId>
-				<artifactId>shopping-list-boot</artifactId>
+				<artifactId>shopping-list-application</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>${project.groupId}</groupId>
-				<artifactId>shopping-list-application</artifactId>
+				<artifactId>shopping-list-boot</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>

@@ -1,6 +1,6 @@
-package com.rasrov.shopping.list.domain.serviceport;
+package com.rasrov.shopping.list.serviceport;
 
-import com.rasrov.shopping.list.domain.entity.MarketEntity;
+import com.rasrov.shopping.list.entity.MarketEntity;
 
 import java.util.List;
 

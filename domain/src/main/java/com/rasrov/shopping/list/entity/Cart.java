@@ -1,4 +1,4 @@
-package com.rasrov.shopping.list.domain.entity;
+package com.rasrov.shopping.list.entity;
 
 import jakarta.validation.constraints.NotNull;
 

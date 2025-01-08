@@ -11,18 +11,28 @@
     <artifactId>shopping-list-infrastructure</artifactId>
 
     <dependencies>
+        <!-- CORE -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>com.rasrov.shopping-list</groupId>
+            <artifactId>shopping-list-application</artifactId>
         </dependency>
         <dependency>
             <groupId>com.rasrov.shopping-list</groupId>
             <artifactId>shopping-list-domain</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.rasrov.shopping-list</groupId>
-            <artifactId>shopping-list-application</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- DATABASE -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-database-postgresql</artifactId>
         </dependency>
     </dependencies>
-
 </project>

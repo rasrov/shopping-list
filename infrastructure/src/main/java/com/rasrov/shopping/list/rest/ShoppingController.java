@@ -1,7 +1,7 @@
-package com.rasrov.shopping.list.infrastructure.rest;
+package com.rasrov.shopping.list.rest;
 
-import com.rasrov.shopping.list.domain.entity.Cart;
-import com.shopping.list.api.CartService;
+import com.rasrov.shopping.list.entity.Cart;
+import com.rasrov.shopping.list.api.CartService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,7 +22,7 @@ public class ShoppingController {
 
     @PostMapping
     public ResponseEntity<Void> saveCart(@Valid @RequestBody final Cart cart) {
-        this.cartService.saveCart(cart);
+        cartService.saveCart(cart);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }

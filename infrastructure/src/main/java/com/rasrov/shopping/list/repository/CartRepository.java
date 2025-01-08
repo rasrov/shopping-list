@@ -1,6 +1,6 @@
-package com.rasrov.shopping.list.infrastructure.repository;
+package com.rasrov.shopping.list.repository;
 
-import com.rasrov.shopping.list.domain.entity.CartEntity;
+import com.rasrov.shopping.list.entity.CartEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;
