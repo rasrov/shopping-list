@@ -1,28 +1,32 @@
 package com.rasrov.shopping.list.domain.entity;
 
 import jakarta.persistence.*;
-import org.springframework.cglib.core.Local;
 
 import java.time.LocalDate;
 import java.util.UUID;
 
 @Entity
 @Table(name = "PRODUCT_OFFER")
-public class ProductsOfferEntity extends CartEntity {
+public class ProductsOfferEntity {
 
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
+    @Column(name = "product_name")
+    private String productName;
+
+    @Column(name = "active")
+    private Boolean active;
+
     @Column(name = "date_start")
     private LocalDate dateStart;
 
     @Column(name = "date_end")
-    private Local dateEnd;
+    private LocalDate dateEnd;
 
-    @ManyToOne
-    @JoinColumn(name = "name")
+    @Column(name = "market")
     private String market;
 
     @Column(name = "original_price")
@@ -30,5 +34,4 @@ public class ProductsOfferEntity extends CartEntity {
 
     @Column(name = "discounted_price")
     private Double discountedPrice;
-
 }
