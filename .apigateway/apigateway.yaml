@@ -1,0 +1,36 @@
+openapi: 3.0.3
+info:
+  title: Shopping List - OpenAPI 3.0
+  description: |-
+    This is a shopping list using scraping and IA
+  contact:
+    email: rasulakhmeddibirov@gmail.com
+  version: 1.0.0
+servers:
+  - url: http://localhost:5001
+    description: localhost
+tags:
+  - name: cart
+
+paths:
+  /cart:
+    post:
+      tags:
+        - cart
+      summary: Add cart items to user list
+      operationId: saveCart
+      requestBody:
+        description: products
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: String
+      responses:
+        '200':
+          description: Successful operation
+        '400':
+          description: Invalid payload supplied
+        '422':
+          description: Validation exception
